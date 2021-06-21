@@ -50,7 +50,7 @@ class EmpleadoDelete(generic.DeleteView):
     
 
 class EmpleadoUpdate(UpdateView):
-    model = Empleado
+    model = Emplead
     success_url = reverse_lazy('empleados')
     fields = ['rut','nombre', 'apellido', 'empleo', 'correo']
     template_name_suffix = '_update_form' 
